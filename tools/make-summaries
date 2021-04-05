@@ -5,6 +5,11 @@ from collections import defaultdict
 import json
 #import fscacher
 import tqdm
+import requests
+
+from datalad import cfg
+from fscacher import PersistentCache
+emails_cache = PersistentCache("datalad-bug-emails")
 
 
 def get_human_id(rec):
@@ -23,8 +28,19 @@ def create_human(rec):
                 login=rec['login'],
                 id=get_human_id(rec),
                 opened=[],
-                participated=[]
+                participated=[],
+                email=None
             )
+
+
+@emails_cache.memoize
+def get_user_email(login):
+    resp = requests.get(
+        f"https://api.github.com/users/{login}",
+        headers={"Authorization": "token %s" % cfg.get('hub.oauthtoken')}
+    )
+    j = json.loads(resp.content)
+    return j.get('email', None)
 
 
 @click.command()
@@ -51,15 +67,19 @@ def summary():
                     humans[p_id] = create_human(p)
                 humans[p_id]["participated"].append(url)
 
-    for rec in humans.values():
+    for rec in tqdm.tqdm(humans.values(), leave=False):
         rec['all'] = list(set(rec['opened'] + rec['participated']))
+        if rec['login']:
+            rec['email'] = get_user_email(rec['login'])
 
     # report in decreasing order
     with open("all-humans.txt", "w") as f:
-        print('Format: # name (login): #bugs-opened #bugs-participated -> #bugs-opened+participated', file=f)
+        print('Format: # name (login) <{email>}: #bugs-opened #bugs-participated -> #bugs-opened+participated', file=f)
         for i, human in enumerate(sorted(humans.values(), key=lambda x: len(x['all']))[::-1], 1):
-            print("{} {}: {} {} -> {} ".format(
-                i, human['id'], len(human['opened']), len(human['participated']), len(human['all'])), file=f)
+            print("{} {} <{}>: {} {} -> {} ".format(
+                i, human['id'], human['email'],
+                len(human['opened']), len(human['participated']), len(human['all'])),
+                file=f)
 
 
 if __name__ == '__main__':
