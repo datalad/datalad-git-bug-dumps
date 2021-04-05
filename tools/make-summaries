@@ -22,7 +22,7 @@ def create_human(rec):
                 name=rec['name'],
                 login=rec['login'],
                 id=get_human_id(rec),
-                bugs=[],
+                opened=[],
                 participated=[]
             )
 
@@ -40,7 +40,7 @@ def summary():
         url = bug['metadata']['github-url']
         if author_id not in humans:
             humans[author_id] = create_human(author)
-        humans[author_id]['bugs'].append(url)
+        humans[author_id]['opened'].append(url)
 
         for p in bug['participants']:
             p_id = get_human_id(p)
@@ -51,12 +51,15 @@ def summary():
                     humans[p_id] = create_human(p)
                 humans[p_id]["participated"].append(url)
 
+    for rec in humans.values():
+        rec['all'] = list(set(rec['opened'] + rec['participated']))
+
     # report in decreasing order
     with open("all-humans.txt", "w") as f:
-        print('Format: # name (login): #bugs-opened #bugs-participated', file=f)
-        for i, human in enumerate(sorted(humans.values(), key=lambda x: len(x['bugs']))[::-1], 1):
-            print("{} {}: {} {}".format(
-                i, human['id'], len(human['bugs']), len(human['participated'])), file=f)
+        print('Format: # name (login): #bugs-opened #bugs-participated -> #bugs-opened+participated', file=f)
+        for i, human in enumerate(sorted(humans.values(), key=lambda x: len(x['all']))[::-1], 1):
+            print("{} {}: {} {} -> {} ".format(
+                i, human['id'], len(human['opened']), len(human['participated']), len(human['all'])), file=f)
 
 
 if __name__ == '__main__':
