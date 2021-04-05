@@ -1,0 +1,139 @@
+Format: # name (login): #bugs-opened #bugs-participated
+1 Yaroslav Halchenko: 1399 649
+2 Michael Hanke (mih): 1097 780
+3 Kyle Meyer (kyleam): 85 398
+4 Benjamin Poldrack (bpoldrack): 82 461
+5 Adina Wagner (adswa): 36 45
+6 dorianps (dorianps): 30 5
+7 Ilya Shlyakhter (notestaff): 12 3
+8 Laura Waite (loj): 11 2
+9 Soichi Hayashi (soichih): 10 1
+10 Matteo Visconti di Oleggio Castello (mvdoc): 9 0
+11 Vanessasaurus (vsoch): 8 4
+12 Alejandro de la Vega (adelavega): 7 3
+13 john lee (leej3): 7 1
+14 Satrajit Ghosh (satra): 7 13
+15 Debanjum (debanjum): 7 12
+16 simon-dube (simon-dube): 6 1
+17 Joey Zhou (joeyzhou98): 5 0
+18 Basile (bpinsard): 5 1
+19 Chris Markiewicz (effigies): 5 6
+20 Dorota Jarecka (djarecka): 5 1
+21 Chris Gorgolewski (chrisgorgo): 5 3
+22 xarvshar (xarvshar): 4 0
+23 Christian Mönch (christian-monch): 4 1
+24 David Kennedy (dnkennedy): 4 1
+25 Ted Strauss (tedstrauss): 4 1
+26 Kusti Skytén (kskyten): 4 1
+27 Dave MacFarlane (driusan): 4 4
+28 Gergana Alteva (glalteva): 4 6
+29 TobiasKadelka (TobiasKadelka): 4 3
+30 Joey Hess (joeyh): 4 80
+31 Peter Vavra (pvavra): 3 1
+32 satyaog (satyaog): 3 0
+33 Horea Christian (TheChymera): 3 0
+34 Nolan Nichols (nicholsn): 3 2
+35 Manuela Kuhn (manuelakuhn): 2 0
+36 Karol Saputa (k-sap): 2 0
+37 Matt Cieslak (mattcieslak): 2 0
+38 Mika Pflüger (mikapfl): 2 0
+39 Hoda1394 (Hoda1394): 2 0
+40 Lennart Wittkuhn (lnnrtwttkhn): 2 0
+41 xloem (xloem): 2 0
+42 Ignas Vyšniauskas (yfyf): 2 0
+43 Timo Dickscheid (dickscheid): 2 1
+44 gi114 (gi114): 2 0
+45 S El Damaty (seldamat): 2 0
+46 Michael Notter (miykael): 2 0
+47 Joerg Stadler (cni-md): 2 2
+48 Nicolas Traut (ntraut): 2 0
+49 Christian Olaf Häusler (chrhaeusler): 2 0
+50 jason gors (jgors): 2 1
+51 Jean-Baptiste Poline (jbpoline): 2 7
+52 Martin Grignard (MartinGrignard): 1 0
+53 Robin Schneider (ypid): 1 0
+54 Matthias Riße (matrss): 1 0
+55 Vince (20): 1 0
+56 Hao-Ting Wang (htwangtw): 1 0
+57 André Manook (man8k): 1 0
+58 Lucas Gautheron (lucasgautheron): 1 0
+59 Dylan Nielson (Shotgunosine): 1 0
+60 Saksham Sharda (Saksham20): 1 0
+61 m-hess (m-hess): 1 0
+62 konkodi210 (konkodi210): 1 0
+63 jkroell (jkroell): 1 0
+64 Gabriel A. Devenyi (gdevenyi): 1 0
+65 Wu Jianxiao (jadecci): 1 0
+66 jbwexler (jbwexler): 1 0
+67 Nicole Lo (nicolocin): 1 0
+68 Steffen Brinckmann (SteffenBrinckmann): 1 0
+69 nrosjat (nrosjat): 1 0
+70 Cécile Madjar (cmadjar): 1 1
+71 HendrikBoehmer (HendrikBoehmer): 1 0
+72 Sofie (sofievalk): 1 0
+73 riedelmax (riedelmax): 1 1
+74 alienx-zero (alienx-zero): 1 0
+75 Jacob Sanz-Robinson (jacobsanz97): 1 0
+76 zswgzx (zswgzx): 1 0
+77 Franklin Feingold (franklin-feingold): 1 0
+78 jonamfischer (jonamfischer): 1 0
+79 Stefan (stefanches7): 1 0
+80 alicebizeul (alicebizeul): 1 0
+81 Sarah Oliveira (sarah1989): 1 0
+82 ins0mniac (ins0mniac2): 1 0
+83 Niels Reuter (nhjjreuter): 1 0
+84 eds-slim (eds-slim): 1 0
+85 Mainak Jas (jasmainak): 1 0
+86 Mathieu Dugré (mathdugre): 1 0
+87 Oscar Esteban (oesteban): 1 0
+88 Shawn Brown (shots47s): 1 0
+89 theovanerp (theovanerp): 1 0
+90 Chris Cheng (chrispycheng): 1 0
+91 Camille Maumet (cmaumet): 1 1
+92 James Tocknell (aragilar): 1 0
+93 tstoeter (tstoeter): 1 0
+94 Alex Waite (aqw): 1 6
+95 Eshin Jolly (ejolly): 1 0
+96 Daisy Burr (daisyburr): 1 0
+97 Taylor Olson (overlake333): 1 0
+98 Elizabeth DuPre (emdupre): 1 2
+99 Yassine Benhajali (yassinebha): 1 0
+100 William F. Broderick (billbrod): 1 0
+101 Sarah (Sally) Guthrie (sguthrie): 1 0
+102 Demian Wassermann (demianw): 1 0
+103 chaselgrove (chaselgrove): 1 0
+104 Samuel Loury (Konubinix): 1 0
+105 Stephen Eglen (sje30): 1 0
+106 Dav Clark (davclark): 1 0
+107 tacticfox (tacticfox): 0 1
+108 Pierre Rioux (prioux): 0 1
+109 Reese Wilkinson (Furciferi): 0 1
+110 Stefano Moia (smoia): 0 1
+111 Taylor Salo (tsalo): 0 1
+112 Manish Mohapatra (manimoh): 0 1
+113 xgui3783 (xgui3783): 0 1
+114 Tristan Glatard (glatard): 0 2
+115 Nell Hardcastle (nellh): 0 1
+116 David Obenshain (obenshaindw): 0 1
+117 Robin Schneider (ypid-geberit): 0 1
+118 Vassiki Chauhan (vassiki): 0 1
+119 santiago (paiva): 0 1
+120 John T. Wodder II (jwodder): 0 11
+121 rmarinshaw (rmarinshaw): 0 1
+122 Roman Valls Guimera (brainstorm): 0 1
+123 Tom Close (tclose): 0 1
+124 disadone (disadone): 0 1
+125 Andy Connolly (andycon): 0 2
+126 David Keator (dbkeator): 0 1
+127 Christopher Madan (cMadan): 0 1
+128 ThHanke (ThHanke): 0 1
+129 Tal Yarkoni (tyarkoni): 0 1
+130 Oliver Bertuch (poikilotherm): 0 1
+131 Luke Chang (ljchang): 0 2
+132 sunbbing (sunbbing): 0 1
+133 Paolo Avesani (Paolopost): 0 1
+134 Ben Cipollini (bcipolli): 0 1
+135 Ariel Rokem (arokem): 0 1
+136 3615pipou (3615pipou): 0 1
+137 Richard Hartmann (RichiH): 0 2
+138 Kevin Archie (karchie): 0 1
