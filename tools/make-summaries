@@ -152,9 +152,20 @@ def summary():
     if custom_to_add:
         print(f"Have no email for {json.dumps(custom_to_add, indent=2)}")
 
+    to_invite = sorted(to_invite, key=lambda x: x['all'])[::-1]
     with open('invitees.json', 'w') as f:
         json.dump(to_invite, f, indent=2)
 
+    with open('paper-header.yaml', 'w') as f:
+        for p in to_invite:
+            # Already there
+            if p['name'] in ['Yaroslav O. Halchenko', 'Adina Wagner', 'Vanessa Sochat', 'Michael Hanke']:
+                continue
+            print(f"""\
+ - name: {p['name']}  # {p['commits']} commits, issues: opened {p['opened']} participated in {p['participated']}
+   orcid: {p.get('orcid', '')}
+   affiliation: {p.get('affiliation', " # add full names if not yet listed, or indexes if already are")}""", file=f)
+    # Let's generate perspective list of authors
     # with open("all-humans.txt", "w") as f:
     #     print('Format: # name (login) <{email>}: #bugs-opened #bugs-participated -> #bugs-opened+participated', file=f)
     #     for i, human in enumerate(sorted(humans.values(), key=lambda x: x['all'])[::-1], 1):
