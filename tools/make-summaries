@@ -159,8 +159,8 @@ def summary():
     with open('paper-header.yaml', 'w') as f:
         for p in to_invite:
             # Already there
-            if p['name'] in ['Yaroslav O. Halchenko', 'Adina Wagner', 'Vanessa Sochat', 'Michael Hanke']:
-                continue
+            # if p['name'] in ['Yaroslav O. Halchenko', 'Adina Wagner', 'Vanessa Sochat', 'Michael Hanke']:
+            #     continue
             print(f"""\
  - name: {p['name']}  # {p['commits']} commits, issues: opened {p['opened']} participated in {p['participated']}
    orcid: {p.get('orcid', '')}
