@@ -43,8 +43,8 @@ def email_all(invitees_path, paper_path):
             continue
         try:
             pass
-            #email_one(i)
-            #i['status'] = 'emailed'
+            email_one(i)
+            i['status'] = 'emailed'
         except Exception as exc:
             print(f"Failed to email {i['name']}: {exc}")
             i['status'] = 'email-failed'
